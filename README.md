@@ -67,6 +67,9 @@ The map  from openstreet, select the road route whose alignment will be designed
 
 Figure 3 Road Map and Latitude-Longitude Table
 
+Coordinate data is stored in a csv file: ``` python
+coordinate_input_data.csv
+```
 
 ## b. Road Geometric Design Data
 1. Design speed, Vd, 
