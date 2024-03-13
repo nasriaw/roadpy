@@ -224,8 +224,18 @@ $pip install roadpy-0.0.1.tar.gs
 ![](img/folder_dist.png)
 
 
+### references:
 
-
+1. AASHTO. A Policy on Geometric Design of Highways and Streets. American Association of State Highway and Transportation Officials, Washington D.C, 1984, 2001, 2004, 2005, 2011;
+2. Afolayan, Oluwasola, and Abiola, 2020. Reliability Approach to Highway Geometric Design: A Methodical Review. International Conference of Science, Engineering & Environmental Technology (ICONSEET), 4(9): 62-79, 2019, ISSN 0794-9650;
+3. Aditya Dhanuka, Aman Srivastava, Leena Khadke, and Nand Lal Kushwaha. 2023. Smart Geometric Design of Highways Using HTML Programming for Sustainable and Climate Resilient Cities;
+4. Autodesk. 2023. Civil 3D features for road and highway design, source: https://www.autodesk.com/products/civil-3d/road-design
+5. Highway Design Manual. 2020. Chapter 200 – Geometric Design And Structure Standards.
+6. Ratna Putri Hidayati, Tugas Akhir T Sipil ITS, 2016 Perencanaan Geometrik Dan Perencanaan Perkerasan Lentur Menggunakan Metode Aashto’93 Pada Jalan Desa Munjungan Ke Desa Karanggandu Kabupaten Trenggalek;
+7. SE Dirjen Bina Marga Nomor 20/SE/Db/2021 tentang Pedoman Desain Geometrik Jalan
+8. UU No.14 Tahun 1992 Tentang Lalu Lintas dan Angkutan Jalan
+9. UU No.38 Tahun 2004 tentang Jalan; dan PP 34/2006 tentang Jalan
+10. Coding python, ref: https://www.python.org/ 
 
 
 
