@@ -67,7 +67,8 @@ The map  from openstreet, select the road route whose alignment will be designed
 
 Figure 3 Road Map and Latitude-Longitude Table
 
-Coordinate data is stored in a csv file: ``` python
+Coordinate data is stored in a csv file: 
+``` python
 coordinate_input_data.csv
 ```
 
@@ -190,28 +191,38 @@ def angle(u, v):
 
 ```
 ## 4. Python Coding
-
-listing python programs as in the file: 
+The main programs as in the file: 
 ```
 alignment.py
 ```
+
 # 6. Folder and filling
 Folder and filling structure as shown below:
 ![](img/folder_structure_filling.png)
-Figure 4. Folder Structure and Filling.
+Figure 5. Folder Structure and Filling.
 
 # 7. Output
 Output, running test.py at the console prompt:
 ```
   - $python test.py
 ```
+you will be asked for the input file:
+```
+coordinate_input_data.csv
+```
+And
+```
+geometric_element_calculation_results.csv
+```
 Make sure you have installed all the necessary import packages.
-The output of running the roadpy package (tets.py)  is as shown in Figure 5 below.
+The output of running the roadpy package (tets.py)  is as shown in Figure 6 below.
 
 ![](img/output_roadpy_konsol.png)
-Figure 5. Output of running test.py
-
-
+Figure 6. Output of running test.py
+The output file will be saved in the 
+```
+geometric_element_calculation_results.csv
+```
 # 8. Distribution dan Install package
 install: 
 ```python
