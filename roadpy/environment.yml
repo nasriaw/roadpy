@@ -1,0 +1,10 @@
+name: roadpy
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - numpy
+  - pandas
+  - haversine
+  - math
+  - matplotlib
