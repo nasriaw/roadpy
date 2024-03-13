@@ -87,6 +87,7 @@ VR ≥ 80 Km/jam, re-max = 0,025 m/m/detik
 Table 1 Design Input Data
 
 ![](img/tabel_dan_chart_Vd_Ls.png)
+
 Figure 4. Vd - Ls relationship and its equations
 (ref: SE Dirjen Bina Marga Nomor 20/SE/Db/2021, page:125, AASHTO, 2011)
 
@@ -198,7 +199,9 @@ alignment.py
 
 # 6. Folder and filling
 Folder and filling structure as shown below:
+
 ![](img/folder_structure_filling.png)
+
 Figure 5. Folder Structure and Filling.
 
 # 7. Output
@@ -218,7 +221,9 @@ Make sure you have installed all the necessary import packages.
 The output of running the roadpy package (tets.py)  is as shown in Figure 6 below.
 
 ![](img/output_roadpy_konsol.png)
+
 Figure 6. Output of running test.py
+
 The output file will be saved in the 
 ```
 geometric_element_calculation_results.csv
