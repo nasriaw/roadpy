@@ -1,7 +1,7 @@
-name: roadpy
-channels:
-  - conda-forge
-  - defaults
+#name: roadpy
+#channels:
+#  - conda-forge
+#  - defaults
 dependencies:
   - numpy
   - pandas
