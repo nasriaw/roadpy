@@ -5,6 +5,4 @@
 dependencies:
   - numpy
   - pandas
-#  - haversine
-#  - math
   - matplotlib
