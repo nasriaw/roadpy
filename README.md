@@ -61,7 +61,7 @@ Dd = 1432.39/R
    
 # 4. Data Input
 ## a. Topography, 
-from the map or openstreet, select the road route whose alignment will be designed with several curve plan points (PI, Point of Intersection), topography and latitude-longitude data as shown in the image below:
+The map  from openstreet, select the road route whose alignment will be designed with several curve plan points (PI, Point of Intersection). The roadpy test simulation using topographic data for the cities of Batu-Kota - Malang - Kepanjen City - Gondanglegi and Bululawang obtained 4 points or 3 corners of the highway. The map and latitude-longitude data are as shown in the image below:
 
 ![](img/map_lat_long_batu_malang_kepanjen.png)
 
