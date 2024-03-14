@@ -212,7 +212,7 @@ Output, running test.py at the console prompt:
 ```
   - $python test.py
 ```
-you will be asked for the input file:
+The input data has been prepared, you will be asked to enter the data, please enter the data:
 ```
 coordinate_input_data.csv
 ```
