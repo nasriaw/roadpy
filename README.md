@@ -84,6 +84,7 @@ VR ≥ 80 Km/jam, re-max = 0,025 m/m/detik
 7. Curvature length of spiral transition to superelevation, Le or Ls Design data as in the following table:
 
 ![](img/tabel_design_input_data.png)
+
 Table 1 Design Input Data.
 
 This design data is saved as geometric_input_data.csv later as input when the program is run.
@@ -91,6 +92,7 @@ This design data is saved as geometric_input_data.csv later as input when the pr
 geometric_input_data.csv
 ```
 ![](img/tabel_dan_chart_Vd_Ls.png)
+
 Figure 4. Vd - Ls relationship and its equations
 (ref: SE Dirjen Bina Marga Nomor 20/SE/Db/2021, page:125, AASHTO, 2011)
 
