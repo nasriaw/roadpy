@@ -66,6 +66,7 @@ The map  from openstreet, select the road route whose alignment will be designed
 ![](img/map_lat_long_batu_malang_kepanjen.png)
 
 Figure 3 Road Map and Latitude-Longitude Table
+This coordinate data is saved as coordinate_input_data.csv later as input when the program is run.
 
 Coordinate data is stored in a csv file: 
 ``` python
@@ -84,10 +85,10 @@ VR ≥ 80 Km/jam, re-max = 0,025 m/m/detik
 7. Curvature length of spiral transition to superelevation, Le or Ls Design data as in the following table:
 
 ![](img/tabel_design_input_data.png)
-Table 1 Design Input Data
+Table 1 Design Input Data (lates as input
+This design data is saved as geometric_input_data.csv later as input when the program is run.
 
 ![](img/tabel_dan_chart_Vd_Ls.png)
-
 Figure 4. Vd - Ls relationship and its equations
 (ref: SE Dirjen Bina Marga Nomor 20/SE/Db/2021, page:125, AASHTO, 2011)
 
