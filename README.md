@@ -136,66 +136,89 @@ import matplotlib.pyplot as plt
 
 ## 3. Functions
 ```python
-def hitungFmax(a):
-    return (0.192-(0.00065*(a)))
+def hitung_fmax(_a):
+    """a = Design Speed, Vd(Kph)"""
+    return (0.192-(0.00065*(_a)))
 
-def hitungRmin(a,b,c):
-    return (a**2)/(127*(b+c))
+def hitung_rmin(_a,_b,_c):
+    """b = emax, c = fmax"""
+    return (_a**2)/(127*(_b+_c))
 
-def hitungDmax(a,b,c):
-    return ((181913.53*(b+c))/(a**2))
+def hitung_d_max(_a,_b,_c):
+    """a = Design Speed, Vd(Kph),b = emax, c = fmax"""
+    return ((181913.53*(_b+_c))/(_a**2))
 
-def hitungDd(d):
-    return 1432.4/(d)
+def hitung_dd(_d):
+    """d = R design, Rd (m)"""
+    return 1432.4/(_d)
 
-def e_Hitung_def(b, Dd, Dmax):
-    return (((-b*Dd**2)/(Dmax**2))+((2*b*Dd)/(Dmax)))
+def e_hitung_def(_b, _dd, _d_max):
+    """b = emax, Dd, d_max"""
+    return (((-_b*_dd**2)/(_d_max**2))+((2*_b*_dd)/(_d_max)))
 
-def hitung_Lst(a,e):
-    return (a/3.6)*e
+def hitung_lst(_a,_e):
+    """e = T, Transition curve travel time, tmax=3,00” """
+    return (_a/3.6)*_e
 
-def hitung_Lsms(a,d):   # modifikasi shortt: return (((0.022*a**3)/(d*0.4))-(2.727*(a*ed)/0.4))
-    return (((0.0214*a**3)/(d*1.2)))  # C=1,2, ref: SE 20/2021 hal 125
+def hitung_lsms(_a,_d):
+    '''modifikasi shortt: return (((0.022*a**3)/(d*0.4))-(2.727*(a*ed)/0.4))
+    C=1,2, ref: SE 20/2021 hal 125'''
+    return (((0.0214*_a**3)/(_d*1.2)))
 
-def hitung_Lsi(a,f):       # Diantara 2 Ls, diambil yang terpanjang
-    return (0.1-0.02)*a/(3.6*f)
+def hitung_lsi(_a,_f):
+    """a = Design Speed, Vd(Kph)
+    f = delta_i, 0.035 (Vr<80) atau 0,025 (Vr>80) """
+    return (0.1-0.02)*_a/(3.6*_f)
 
-def sudutSpiral_def(d, Ls):
-    return (90*Ls/((math.pi)*d))
+def angle_spiral_def(_d, _ls):
+    """d = R design, Rd (m), Ls"""
+    return 90*_ls/((math.pi)*_d)
 
-def sudutCircle(g, sudutSpiral_def):
-    return (g-(2*(sudutSpiral_def)))
+def angle_circle_def(_g, _h):
+    """g = Angle PI, derajat"""
+    _h = angle_spiral_def
+    return (_g-(2*(_h)))
 
-def hitung_Lc(sudutCircle, d):
-    return (sudutCircle*math.pi*d)/180
+_i = angle_circle_def
+def hitung_lc(_i, _d):
+    """d = R design, Rd (m)"""
+    return (_i)*(math.pi*(_d)/180)
 
-def hitung_Xs(Ls, d):
-    return Ls*(1-((Ls**2)/(40*d**2)))
+def hitung_xs(_ls, _d):
+    """d = R design, Rd (m)"""
+    return _ls*(1-((_ls**2)/(40*_d**2)))
 
-def hitung_Ys(Ls, d):
-    return (Ls**2)/(6*d)
+def hitung_ys(_ls, _d):
+    """d = R design, Rd (m)"""
+    return (_ls**2)/(6*_d)
 
-def hitung_P(Ls,d):
-    return Ls**2/(24*d)
+def hitung_p(_ls,_d):
+    """d = R design, Rd (m)"""
+    return _ls**2/(24*_d)
 
-def hitung_K(Ls, d, sudutSpiral):
-    return Ls-(Ls**2/(40*(d**2)))-d*math.sin(sudutSpiral*math.pi/180)
+def hitung_k(_ls, _d, _angle_spiral):
+    """d = R design, Rd (m)"""
+    return _ls-(_ls**2/(40*(_d**2)))-_d*math.sin(_angle_spiral*math.pi/180)
 
-def hitung_Tt(d, P, g, K):
-    return (d+P)*math.tan(0.5*g*math.pi/180)+K
+def hitung_tt(_d, _p, _g, _k):
+    """d = R design, Rd (m)"""
+    return (_d+_p)*math.tan(0.5*_g*math.pi/180)+_k
 
-def hitung_Et(d, hitung_P, g):
-    return ((d+hitung_P)/(math.cos(0.5*g*math.pi/180)))-d
+_j = hitung_p
+def hitung_et(_d, _j, _g):
+    """d = R design, Rd (m)"""
+    return ((_d+_j)/(math.cos(0.5*_g*math.pi/180)))-_d
 
-def hitung_Lt(hitung_Lc, Ls):
-    return hitung_Lc+2*Ls
+_k = hitung_lc
+def hitung_lt(_k, _ls):
+    """ls = length of spiral)"""
+    return _k+2*_ls
 
-def angle(u, v):
-    """return the angle between two vectors in any dimension space, indegrees"""
+def angle(_u, _v):
+    """return the angle between two vectors in any dimension space, indegrees
+    Ref:angle between three point, iTechNote,"""
     return np.degrees(
-        math.acos(np.dot(u,v)/ (np.linalg.norm(u)*np.linalg.norm(v))))
-    #Ref:angle between three point, iTechNote, https://itecnote.com/tecnote/python-code-to-calculate-angle-between-three-points-lat-long-coordinates/
-
+        math.acos(np.dot(_u,_v)/(np.linalg.norm(_u)*np.linalg.norm(_v))))
 ```
 ## 4. Python Coding
 The main programs as in the file: 
