@@ -246,9 +246,9 @@ coordinate_input_data.csv
 ```
 And
 ```
-geometric_element_calculation_results.csv
+geometric_input_data.csv
 ```
-Make sure you have installed all the necessary import packages.
+Make sure you have installed all the necessary import packages and prepared the 2 input files above.
 The output of running the roadpy package (tets.py)  is as shown in Figure 6 below.
 
 ![](img/output_roadpy_konsol.png)
