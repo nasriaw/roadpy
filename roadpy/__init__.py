@@ -1,1 +1,1 @@
-from .alignment import *
+from .alignment import Horizontal
