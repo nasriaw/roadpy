@@ -39,7 +39,7 @@ def hitung_lsms(_a,_d):
 
 def hitung_lsi(_a,_f):
     """a = Design Speed, Vd(Kph)
-    f = delta_i, tingkat perubahan kelandaian melintang: 0.035 (Vr<80) atau 0,025 (Vr>80) """
+    f = delta_i, : 0.035 (Vr<80) atau 0,025 (Vr>80) """
     return (0.1-0.02)*_a/(3.6*_f)
 
 def angle_spiral_def(_d, _ls):
