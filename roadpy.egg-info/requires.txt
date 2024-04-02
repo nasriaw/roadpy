@@ -1,5 +1,0 @@
-mathematical
-pandas
-haversine
-numpy
-matplotlib
