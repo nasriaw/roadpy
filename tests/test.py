@@ -1,2 +1,3 @@
-from alignment import Horizontal
-a=Horizontal()
+from roadpy import alignment
+a=alignment
+print(a)
