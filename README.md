@@ -320,7 +320,7 @@ def Horizontal(df):
     return df1
 ```
 ## 4. Main program
-'''Inputing data files '''
+'''python
 print('(In this example the file name is provided in the folder: coordinate_input_data.csv)')
 coordinate=input('Enter the coordinate data point file (latitude, longitude) in CSV format: ')
 coordinate = pd.read_csv(coordinate)
@@ -362,6 +362,7 @@ plt.axis("off")
 plt.imshow(img1)
 plt.show()
 '''
+
 ## 5. Python Coding
 The main programs as in the file: 
 ```
