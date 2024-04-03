@@ -319,7 +319,7 @@ def Horizontal(df):
     df1=df.join(df1, lsuffix=" ")
     return df1
 ```
-## 4. Main program
+## 4. Call Functions
 ```python
 print('(In this example the file name is provided in the folder: coordinate_input_data.csv)')
 coordinate=input('Enter the coordinate data point file (latitude, longitude) in CSV format: ')
