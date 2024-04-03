@@ -32,7 +32,7 @@ jobs:
       run: |
         conda install pytest
         pytest
-        python -m pytest --import-mode=append tests/test.py
+        python -m pytest --import-mode=append tests/
         env:
           LD_LIBRARY_PATH: /usr/local/lib
     - name: Install dependencies
